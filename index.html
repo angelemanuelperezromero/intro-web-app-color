@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selector de Color RGB</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-lg-6 mx-auto">
+        <div class="card border-0 shadow">
+          <div class="card-body">
+            <h1 class="card-title text-center mb-4">Selector de Color RGB</h1>
+            <div class="form-group">
+              <label for="color-picker">Color:</label>
+              <input type="color" class="form-control" id="color-picker">
+            </div>
+            <div class="form-group">
+              <label for="red">Rojo:</label>
+              <input type="range" min="0" max="255" value="0" class="form-control-range" id="red">
+              <input type="number" min="0" max="255" value="0" class="form-control mt-2" id="red-value">
+            </div>
+            <div class="form-group">
+              <label for="green">Verde:</label>
+              <input type="range" min="0" max="255" value="0" class="form-control-range" id="green">
+              <input type="number" min="0" max="255" value="0" class="form-control mt-2" id="green-value">
+            </div>
+            <div class="form-group">
+              <label for="blue">Azul:</label>
+              <input type="range" min="0" max="255" value="0" class="form-control-range" id="blue">
+              <input type="number" min="0" max="255" value="0" class="form-control mt-2" id="blue-value">
+            </div>
+            <div id="color-box" class="mt-4"></div>
+            <div id="hex-code" class="mt-2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
